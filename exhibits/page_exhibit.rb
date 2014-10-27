@@ -29,5 +29,10 @@ class PageExhibit
     context.erb item.template, layout: :full_width,
         layout_options: {:views => context.settings.layouts_dir}
   end
+
+  def render_with_sidebar
+    context.erb item.template, layout: :with_sidebar,
+        layout_options: {:views => context.settings.layouts_dir}
+  end
 end
 # 

@@ -11,12 +11,9 @@
     </div> <!-- .col -->
 
     <div class="col-sm-3 sidebar">
-      <p>Some sidebar content goes here.</p>
-      <p>It could vary for some pages depending on <code>@page_name</code>.</p>
-
+      <p>You might want to try this page instead.</p>
       <ul>
-        <li<% if @page_name == 'help' %> class="active"<% end %>><a href="<%= url('/help/') %>">Introduction</a></li>
-        <li<% if @page_name == 'help_accounts' %> class="active"<% end %>><a href="<%= url('/help/accounts/') %>">Accounts help</a></li>
+        <li><a href="<%= url('/') %>">Encoder</a></li>
       </ul>
     </div>
 

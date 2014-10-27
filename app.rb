@@ -16,7 +16,6 @@ module HashidsOnline
       #end
     #end
 
-
     def page_items
       @page_items ||= {
         home: PageExhibit.new(PageItem.new('home', 'Encoder', '/', :index), self),
@@ -41,9 +40,8 @@ module HashidsOnline
     helpers do
       def show_404
         status 404
-        @page_item = PageItem.new('404', '404', '')
-        erb :'404', :layout => :with_sidebar,
-                    :layout_options => {:views => settings.layouts_dir}
+        @page_item = PageExhibit.new PageItem.new('404', '404', '', :'404'), self
+        @page_item.render_with_sidebar
       end
     end
 
