@@ -1,0 +1,31 @@
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label class="col-sm-2" for="salt">Salt</label>
+    <div class="col-sm-10">
+      <input class="form-control " id="salt" placeholder="Enter salt (your domain, perhaps)">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2" for="min-length">Length</label>
+    <div class="col-sm-10">
+      <input class="form-control" id="min-length" placeholder="Minimum length">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2" for="numbers">Numbers</label>
+    <div class="col-sm-10">
+      <input class="form-control" id="numbers"  placeholder="Integers comma separated">
+    </div>
+  </div>
+  <p>
+    <button id="calc" class="btn btn-primary">Encode</button>
+  </p>
+</form>
+<p>
+  <div class="panel panel-success">
+    <div class="panel-heading">Encoded String appears here</div>
+    <div class="panel-body">
+      <input class="form-control" id="result"  placeholder="result">
+    </div>
+  </div>
+</p>
