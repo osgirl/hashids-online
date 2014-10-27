@@ -5,7 +5,6 @@ encode = ->
   min_len = parseInt j('#min-length').val()
   hashids = new Hashids(salt, min_len);
   nums = j('#numbers').val().split(',')
-
   numbers = for i, n of nums
     parseInt n
 
@@ -13,8 +12,6 @@ encode = ->
   j('#result').val id
 
 j(document).ready ->
-  console.log 'page ready ...'
   j('#calc').on 'click', (event) ->
     encode()
     event.preventDefault()
-

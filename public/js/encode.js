@@ -19,13 +19,11 @@
       }
       return _results;
     })();
-    console.log(numbers);
     id = hashids.encode.apply(hashids, numbers);
     return j('#result').val(id);
   };
 
   j(document).ready(function() {
-    console.log('page ready ...');
     return j('#calc').on('click', function(event) {
       encode();
       return event.preventDefault();
