@@ -35,4 +35,4 @@ class PageExhibit
         layout_options: {:views => context.settings.layouts_dir}
   end
 end
-# 
+#
